@@ -51,6 +51,12 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-react": "^7.27.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "2.4.1"
+  },
+  "lint-staged": {
+    "*{.tsx,.ts}": "npx eslint '**/*{.ts,.tsx}' --fix",
+    "*.{ts,tsx,css,md}": "npx prettier --write"
   }
 }
