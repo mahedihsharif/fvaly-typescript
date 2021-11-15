@@ -1,9 +1,15 @@
 import React from 'react';
-function App() {
-  var hello=""
-  return <div>
+import AppRouter from './AppRouter';
+import Header from './components/Shared/Header/Header';
 
-  </div>;
+function App() {
+  return (
+    <>
+      <AppRouter>
+        <Header />
+      </AppRouter>
+    </>
+  );
 }
 
 export default App;
